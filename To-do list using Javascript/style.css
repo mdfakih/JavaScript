@@ -60,5 +60,6 @@ h1, h2{
 	color: #A33DA3;
 	text-align: center;
 	text-decoration: none;
+	text-transform: uppercase;
 	list-style-position: inside;
 }
