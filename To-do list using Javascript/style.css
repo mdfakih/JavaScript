@@ -1,0 +1,64 @@
+body,html{
+	height: 100%;
+	width: 100%;
+	background: url("https://image.freepik.com/free-photo/yellow-list-top-view_23-2148475388.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.container{
+	text-align: center;
+	margin: 20px;
+}
+
+#userinput{
+	text-align: center;
+	height: 50px;
+	border: none;
+	outline: none;
+	border-radius: 300px;
+	text-transform: uppercase;
+}
+
+hr{
+	border-color: #2A56DA;
+	border-width: 3px;
+	max-width: 765px;
+}
+
+h1, h2{
+	font-size: 3rem;
+	color: #A33DA3;
+	text-align: center;
+}
+
+.button{
+	text-align: center;
+	margin: 10px;
+}
+
+.btn{
+	font-weight: 700px;
+	border-radius: 300px;
+	color: #FF4900;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.btn-primary{
+	text-decoration-color: #FF4900;
+	background-color: #572753;
+	border-color: #f05f44;
+}
+.btn-xl{
+	padding: 1rem 2rem;
+}
+
+.wrapper{
+	font-size: 3rem;
+	color: #A33DA3;
+	text-align: center;
+	text-decoration: none;
+	list-style-position: inside;
+}
