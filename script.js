@@ -7,10 +7,14 @@ function inputLength() {
 }
 
 function createElement() {
+	var delbutton = document.createElement("button");
 	var li = document.createElement("li");
-		li.appendChild(document.createTextNode(input.value));
-		ul.appendChild(li);
-		input.value = "";
+	ul.appendChild(li);
+	li.appendChild(document.createTextNode(input.value));
+	li.appendChild(delbutton);
+	input.value = "";
+	delbutton.classList.add("delClass");
+	delbutton.innerHTML = "Delete";
 }
 
 function addListWhenClick() {
@@ -24,6 +28,25 @@ function addListWhenKeypress(event){
 		createElement();
 	}
 }
+
+function deleteTodo(){
+	if(element.target.className === "delClass"){
+		element.target.parentElement.remove();
+	}
+}
+
+function toggleIt(){
+	if (element.target.tagName === "LI"){
+		element.target.classList.toggle("done");
+	}
+}
+
+function handleDeleteButton(){
+	deleteTodo();
+	toggleIt();
+}
+
+ul.addEventListener("click", handleDeleteButton);
 
 button.addEventListener("click", addListWhenClick);
 
