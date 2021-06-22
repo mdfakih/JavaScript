@@ -30,8 +30,8 @@ function addListWhenKeypress(event){
 }
 
 function deleteTodo(task){
-	if(element.target.className === "delClass"){
-		element.target.parentElement.remove();
+	if(task.target.className === "delClass"){
+		task.target.parentElement.remove();
 	}
 }
 
