@@ -29,21 +29,21 @@ function addListWhenKeypress(event){
 	}
 }
 
-function deleteTodo(event){
+function deleteTodo(task){
 	if(element.target.className === "delClass"){
 		element.target.parentElement.remove();
 	}
 }
 
-function toggleIt(event){
+function toggleIt(element){
 	if (element.target.tagName === "LI"){
 		element.target.classList.toggle("done");
 	}
 }
 
 function handleDeleteButton(){
-	deleteTodo(event);
-	toggleIt(event);
+	deleteTodo(element);
+	toggleIt(element);
 }
 
 ul.addEventListener("click", handleDeleteButton);
