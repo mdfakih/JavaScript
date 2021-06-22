@@ -41,7 +41,7 @@ function toggleIt(element){
 	}
 }
 
-function handleDeleteButton(){
+function handleDeleteButton(element){
 	deleteTodo(element);
 	toggleIt(element);
 }
