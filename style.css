@@ -28,7 +28,7 @@ hr{
 	max-width: 765px;
 }
 
-h1, h2{
+h1, h2, h3{
 	font-size: 3rem;
 	color: #A33DA3;
 	text-align: center;
@@ -66,4 +66,24 @@ h1, h2{
 
 .done{
 	text-decoration: line-through;
+}
+
+.delClass{
+	display: inline-block;
+	text-align: center;
+	background-color: #ED0000;
+	border: none;
+	margin:  0px 0px 10px 10px;
+	color: white;
+	font-size: 15px;
+	padding: 8px;
+	border-radius: 50%;
+	opacity: 0.5;
+	position: relative;
+	left: 10px;
+	bottom: 10px;
+}
+
+.delClass:hover{
+  	opacity: 1.0;
 }
