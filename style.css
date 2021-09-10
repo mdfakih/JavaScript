@@ -15,11 +15,17 @@ body,html{
 
 #userinput{
 	text-align: center;
+	width: 40vw;
 	height: 50px;
 	border: none;
 	outline: none;
 	border-radius: 300px;
 	text-transform: uppercase;
+	
+}
+
+#userinput:hover{
+	box-shadow: 1px 1px 8px 5px	#0b8d37, -1px -1px 8px 5px purple;
 }
 
 hr{
